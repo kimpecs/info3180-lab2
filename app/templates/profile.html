@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="profile-header">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+            <h1>Kimberly Pecco</h1>
+            <h3>@_***_</h3>
+            <p>Kingston, Jamaica</p>
+            <p>Joined {{ date_joined }}</p>
+            <p class="bio">Software Developer | Tech Enthusiast | Project Management</p>
+        </div>
+    </div>
+    
+    <div class="profile-stats">
+        <div class="stat">
+            <h3>50</h3>
+            <p>Posts</p>
+        </div>
+        <div class="stat">
+            <h3>1.2K</h3>
+            <p>Followers</p>
+        </div>
+        <div class="stat">
+            <h3>300</h3>
+            <p>Following</p>
+        </div>
+    </div>
+    
+    <div class="profile-actions">
+        <button class="follow-btn">Follow</button>
+    </div>
+</div>
+{% endblock %}
