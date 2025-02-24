@@ -1,3 +1,101 @@
-body {
-    padding-top: 5rem;
+/* Profile Container */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.profile-header {
+    margin-bottom: 20px;
+    background-color: #0e902d;  
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;  
+    margin-bottom: 15px;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.username {
+    font-size: 18px;
+    color: #fff;
+}
+
+.location {
+    font-size: 16px;
+    color: #fff;
+}
+
+.date-joined {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Profile Bio and Stats (Unified) */
+.profile-bio-stats {
+    background-color: #fff;  /* White background for both bio and stats */
+    padding: 20px;
+    margin-top: 0;  /* Remove margin to prevent spacing */
+    border-radius: 10px;
+}
+
+/* Profile Bio */
+.profile-bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;  /* Optional: can be adjusted for spacing */
+}
+
+/* Profile Stats */
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 23px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Follow Button */
+.follow-button {
+    padding: 13px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;  
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;  /* Added margin-top to increase space above the button */
+}
+
+.follow-button:hover {
+    background-color: #218838; 
 }

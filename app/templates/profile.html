@@ -1,35 +1,53 @@
 {% extends "base.html" %}
 
+{% block css %}
+<!-- Link to the CSS file -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+{% endblock %}
+
 {% block main %}
 <div class="profile-container">
     <div class="profile-header">
-        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic">
-        <div class="profile-info">
-            <h1>Kimberly Pecco</h1>
-            <h3>@_***_</h3>
-            <p>Kingston, Jamaica</p>
-            <p>Joined {{ date_joined }}</p>
-            <p class="bio">Software Developer | Tech Enthusiast | Project Management</p>
-        </div>
+        <!-- Profile Picture -->
+        <img src="{{ url_for('static', filename='images/kimberly.jpg') }}" alt="Profile Picture" class="profile-pic">
+
+        <!-- Full Name -->
+        <h1>Kimberly Pecco</h1>
+        
+        <!-- Username -->
+        <p class="username">@_***_</p>
+        
+        <!-- Location -->
+        <p class="location">Kingston, Jamaica</p>
+        
+        <!-- Date Joined -->
+        <p class="date-joined">Joined January, 2018</p>
     </div>
-    
+
+    <!-- Bio -->
+    <div class="profile-bio">
+        <p>Passionate Software Developer with a keen interest in technology, 
+            innovation, and project management.
+            Based in Kingston, Jamaica</p>
+    </div>
+
+    <!-- Stats -->
     <div class="profile-stats">
         <div class="stat">
-            <h3>50</h3>
-            <p>Posts</p>
+            <span class="stat-number">2</span>
+            <span class="stat-label">Posts</span>
         </div>
         <div class="stat">
-            <h3>1.2K</h3>
-            <p>Followers</p>
+            <span class="stat-number">25</span>
+            <span class="stat-label">Following</span>
         </div>
         <div class="stat">
-            <h3>300</h3>
-            <p>Following</p>
+            <span class="stat-number">90</span>
+            <span class="stat-label">Followers</span>
         </div>
     </div>
-    
-    <div class="profile-actions">
-        <button class="follow-btn">Follow</button>
-    </div>
+
+    <!-- Follow Button -->
+    <button class="follow-button">Follow</button>
 </div>
 {% endblock %}
