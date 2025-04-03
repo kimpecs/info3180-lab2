@@ -48,9 +48,9 @@
 
 /* Profile Bio and Stats (Unified) */
 .profile-bio-stats {
-    background-color: #fff;  /* White background for both bio and stats */
+    background-color: #fff;  
     padding: 20px;
-    margin-top: 0;  /* Remove margin to prevent spacing */
+    margin-top: 0;  
     border-radius: 10px;
 }
 
